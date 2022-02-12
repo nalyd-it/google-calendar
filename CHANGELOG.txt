@@ -1,0 +1,10 @@
+Main features:
+Created 5 layouts called:
+	day-layout.component
+	week-layout.component
+	month-layout.component
+	year-layout.component
+	yday-layout.component
+They can be accessed via the top navbar (with the default as week) and they rearrange the calendar to the corresponding modes
+
+Github kink: https://github.com/nalyd-it/google-calendar
