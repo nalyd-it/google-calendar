@@ -1,0 +1,19 @@
+
+<div *ngIf="myProfileData != undefined">
+    <div class="btn-group">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+          D
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-lg-start">
+            <p>{{myProfileData.name}}</p>
+            <p>{{myProfileData.email}}</p>
+          <li><button class="dropdown-item" type="button">Manage your Google Account</button></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><button class="dropdown-item" type="button">Add another account</button></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><button class="dropdown-item" type="button">Sign out</button></li>
+        </ul>
+      </div>
+    
+</div>
+

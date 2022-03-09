@@ -9,6 +9,8 @@ import { WeekLayoutComponent } from 'src/date/week-layout.component';
 import { MonthLayoutComponent } from 'src/date/month-layout.component';
 import { YearLayoutComponent } from 'src/date/year-layout.component';
 import { FourDayLayoutComponent } from 'src/date/4day-layout.component';
+import { NavbarProfileComponent } from 'src/navigation/profile.component'
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -19,15 +21,18 @@ import { FourDayLayoutComponent } from 'src/date/4day-layout.component';
     WeekLayoutComponent,
     MonthLayoutComponent,
     YearLayoutComponent,
-    FourDayLayoutComponent
+    FourDayLayoutComponent,
+    NavbarProfileComponent
+    
 
 
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 <div class="row">
+    <!--
     <div class="col">
         <fm-dotwDotm dotw="SUN" [dotm]=13> </fm-dotwDotm>
     </div>
@@ -19,4 +20,10 @@
     <div class="col">
         <fm-dotwDotm dotw="SAT" [dotm]=18> </fm-dotwDotm>
     </div>
+`-->
+    <ng-container *ngFor="let day of myCurrentWeek">
+        <div class="col">
+            <fm-dotwDotm dotw={{day.dotw}} [dotm]=day.dotm> </fm-dotwDotm>
+        </div>
+    </ng-container>
 </div>
