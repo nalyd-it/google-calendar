@@ -1,10 +1,9 @@
 Main features:
-Created 5 layouts called:
-	day-layout.component
-	week-layout.component
-	month-layout.component
-	year-layout.component
-	yday-layout.component
-They can be accessed via the top navbar (with the default as week) and they rearrange the calendar to the corresponding modes
+Uploaded current-week to firebase database which contians information about the week (day of the week, day of the month, and is today.
+current-week can be found at https://cal-f9b9b-default-rtdb.firebaseio.com/current-week.json
 
-Github kink: https://github.com/nalyd-it/google-calendar
+added currentWeek.model.ts and currentWeek.services.ts to pull data from server to be used in week-layout.component
+updated week-layout.component to allow for information to be pulled from server, and implemented ngfor loop
+
+Github link: https://github.com/nalyd-it/google-calendar
+Firebase link: https://console.firebase.google.com/project/cal-f9b9b/database/cal-f9b9b-default-rtdb/data
