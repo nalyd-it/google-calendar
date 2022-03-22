@@ -1,11 +1,17 @@
 {
-    "hosting": {
-      "public": "dist/google-cal",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ]
-    }
-  }
-  
+    "hosting": 
+      {
+        "public": "dist/google-cal",
+        "ignore": [
+          "firebase.json",
+          "**/.*",
+          "**/node_modules/**"
+        ],
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      }
+  } 

@@ -11,6 +11,8 @@ import { YearLayoutComponent } from 'src/date/year-layout.component';
 import { FourDayLayoutComponent } from 'src/date/4day-layout.component';
 import { NavbarProfileComponent } from 'src/navigation/profile.component'
 import { HttpClientModule} from '@angular/common/http';
+import { AngularFireModule } from '@angular/fire/compat';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -22,17 +24,21 @@ import { HttpClientModule} from '@angular/common/http';
     MonthLayoutComponent,
     YearLayoutComponent,
     FourDayLayoutComponent,
-    NavbarProfileComponent
+    NavbarProfileComponent,
     
+
+
 
 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    AngularFireModule.initializeApp(environment.firebase)
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
