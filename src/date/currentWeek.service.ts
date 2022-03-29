@@ -1,5 +1,5 @@
-import{HttpClient} from "@angular/common/http";
 import {Injectable} from "@angular/core";
+import { AngularFireDatabase } from "@angular/fire/compat/database";
 import{CurrentWeekModel} from "./currentWeek.model";
 
 @Injectable(
@@ -7,18 +7,13 @@ import{CurrentWeekModel} from "./currentWeek.model";
 )
 
 export class CurrentWeekService{
-    private baseUrl:string = "https://cal-f9b9b-default-rtdb.firebaseio.com/";
-    private currentWeekEndPoint:string = "current-week.json";
-
-    constructor(private http:HttpClient){
-        //return this.http.get(this.baseUrl + this.currentWeekEndPoint);
-    }
+    constructor(private db:AngularFireDatabase){ }
 
     getCurrentWeek(){
-        return this.http.get<CurrentWeekModel []>(this.baseUrl + this.currentWeekEndPoint);
+        return this.db.list<CurrentWeekModel>("current-week").valueChanges();
     }
 
-    getCurrentWeekDay(index:number){
-        return this.http.get<CurrentWeekModel>(this.baseUrl + 'current-week/' + index + '.json');
-    }
+    //getCurrentWeekDay(index:number){
+      //  return this.db.list<CurrentWeekModel>("current-week").valueChanges().get(number);
+    //}
 }

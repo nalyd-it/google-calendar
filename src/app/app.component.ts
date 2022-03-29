@@ -9,9 +9,5 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent {
   title = 'google-cal';
-  items: Observable<any[]>;
-  constructor(firestore: AngularFirestore) {
-    this.items = firestore.collection('items').valueChanges();
-  }
 }
 
