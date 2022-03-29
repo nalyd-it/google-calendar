@@ -13,6 +13,8 @@ import { NavbarProfileComponent } from 'src/navigation/profile.component'
 import { HttpClientModule} from '@angular/common/http';
 import { AngularFireModule } from '@angular/fire/compat';
 import { environment } from '../environments/environment';
+import { SettingsLayoutComponent } from 'src/date/settings-layout.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { environment } from '../environments/environment';
     YearLayoutComponent,
     FourDayLayoutComponent,
     NavbarProfileComponent,
-    
+    SettingsLayoutComponent
 
 
 
@@ -35,7 +37,8 @@ import { environment } from '../environments/environment';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    AngularFireModule.initializeApp(environment.firebase)
+    AngularFireModule.initializeApp(environment.firebase),
+    FormsModule
   ],
   providers: [HttpClientModule],
   bootstrap: [AppComponent]

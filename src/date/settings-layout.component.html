@@ -1,0 +1,12 @@
+<h1>Set Date:</h1>
+<form #form="ngForm" (ngSubmit)="setWeek($event)">
+    <div class="form-group">
+      <label for="dotwInput">Day of the week</label>
+      <input type = "text" class="form-control" name="dotwInput" placeholder="Enter day of the week. Ex. Sunday">
+    </div>
+    <div class="form-group">
+      <label for="dotmInput">Day of the month</label>
+      <input type ="number" class="form-control" name="dotmInput" placeholder="Day of the Month. Ex. 12">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>

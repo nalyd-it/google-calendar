@@ -1,0 +1,10 @@
+Main features:
+
+*added "settings-layout.component" files which represent a page that allows a user to set the date to one of their choosing 
+    the new date replaces the current-week stored in firebase database
+    currently only day of the week and month of the year
+    changes can be viewed only in week page at the moment
+    settings page can be viewed by clicking gear symbol in navbar
+
+*currentWeek.service was modified to be called by settings-layout.component.ts to update the dates
+    
