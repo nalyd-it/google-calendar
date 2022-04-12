@@ -1,9 +1,6 @@
 Main features:
-Uploaded current-week to firebase database which contians information about the week (day of the week, day of the month, and is today.
-current-week can be found at https://cal-f9b9b-default-rtdb.firebaseio.com/current-week.json
+Added /Auth page and components and service which starts on page and when given proper login or account is created, redirects to main page with access to database
 
-added currentWeek.model.ts and currentWeek.services.ts to pull data from server to be used in week-layout.component
-updated week-layout.component to allow for information to be pulled from server, and implemented ngfor loop
-
+Site link: https://cal-f9b9b.web.app/
 Github link: https://github.com/nalyd-it/google-calendar
 Firebase link: https://console.firebase.google.com/project/cal-f9b9b/database/cal-f9b9b-default-rtdb/data

@@ -7,6 +7,7 @@ import { MonthLayoutComponent } from 'src/date/month-layout.component';
 import { YearLayoutComponent } from 'src/date/year-layout.component';
 import { FourDayLayoutComponent } from 'src/date/4day-layout.component';
 import { SettingsLayoutComponent } from  'src/date/settings-layout.component';
+import { AuthenticationComponent } from './auth/authentication/authentication.component';
 
 const routes:Routes = [
   {path: '', component: WeekLayoutComponent},
@@ -15,7 +16,8 @@ const routes:Routes = [
   {path: 'Month', component: MonthLayoutComponent},
   {path: 'Year', component: YearLayoutComponent},
   {path: '4Day', component: FourDayLayoutComponent},
-  {path: 'Settings', component: SettingsLayoutComponent}
+  {path: 'Settings', component: SettingsLayoutComponent},
+  {path: 'Auth', component: AuthenticationComponent}
 ];
 
 @NgModule({
